@@ -1,0 +1,44 @@
+
+body{
+
+}
+//
+img{
+  // width:100%;
+
+
+}
+//
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+    .navbar-nav>li>a {
+        color: black;
+    }
+  }
+
+.bg {
+  background-image: url(https://unsplash.it/300/134/?random);
+  box-shadow: inset 0 0 0 1000px rgba(53, 68, 198, 0.79);
+  height: 400px;
+  h1{
+    padding-top: 4em;
+    color: white;
+  }
+}
+
+  .shape {
+    background-image: url(https://unsplash.it/25/25/?random);
+    box-shadow: inset 0 0 0 1000px rgba(53, 68, 198, 0.79);
+		width: 4vh;
+    height: 4vh;
+    border-radius:100px;
+}
+
+.shape2 {
+  background-image: url(https://unsplash.it/25/25/?random);
+  box-shadow: inset 0 0 0 1000px rgba(53, 68, 198, 0.79);
+  width: 6vw;
+  height: 6vw;
+  border-radius:100px;
+}
