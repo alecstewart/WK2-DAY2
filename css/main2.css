@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 70px;
+  padding-top: 2em;
+  color: white;
+}
+
+header h5 {
+  padding-bottom: 9em;
+}
+
+.profile.image {
+  height: 8em;
+}
+
+.post-author {
+  color: #2676B2;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.post-author img {
+  width: 20px;
+}
+
+.post-author span {
+  margin-left: 20px;
+}
+
+.navbar {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar .navbar-nav > li > a {
+  color: black;
+}
+
+.bg {
+  background-image: url(https://unsplash.it/300/134/?random);
+  box-shadow: inset 0 0 0 1000px rgba(53, 68, 198, 0.79);
+  height: 400px;
+}
+
+.post-links {
+  padding: 0;
+  list-style: none;
+}
+
+.post-links .post-link {
+  margin-right: 10px;
+  padding: 0;
+  display: inline-block;
+  background-color: #A3B3BF;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.post-links .post-link .glyphicon {
+  display: inline-block;
+  padding: 5px;
+  background-color: #678195;
+  vertical-align: bottom;
+}
+
+.post-links .post-link a {
+  color: white;
+}
+
+.post-links .post-link.post-link-blue {
+  background-color: #2676B2;
+}
+
+.post-links .post-link.post-link-blue .glyphicon {
+  background-color: #143e5e;
+}
+
+.sidebar {
+  padding-top: 40px;
+}
+
+.sidebar h4 {
+  color: #2676B2;
+}
+
+.sidebar img {
+  max-width: 200px;
+}
+
+.profile-image {
+  width: 60px;
+}
+
+.social-links {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.ad {
+  margin-bottom: 30px;
+}
+
+.ad figcaption {
+  font-size: 12px;
+}
+
+footer {
+  border-top: 1px solid #dfe5e9;
+  margin-top: 40px;
+  background-color: #073453;
+}
+
+.bg-white {
+  background-color: white;
+  padding: 40px 0;
+}
+
+.bg-white h2 {
+  margin: 0;
+}
+
+.footer-posts {
+  display: flex;
+  flex-direction: column;
+  background-color: #073453;
+}
+
+.footer-post {
+  padding: 140px 30px 30px 30px;
+  color: #073453;
+  flex: 1;
+  height: 200px;
+  background-image: url(https://unsplash.it/200?random);
+  background-size: cover;
+  opacity: 0.5;
+  transition: all 1s ease;
+}
+
+.footer-post h6 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-post:hover {
+  color: white;
+  opacity: 1.0;
+}
+
+.footer-links {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-nav li a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .post-links .post-link {
+    width: auto;
+    margin-bottom: auto;
+  }
+  .footer-posts {
+    flex-direction: row;
+  }
+  .footer-links {
+    text-align: left;
+  }
+  .footer-nav {
+    text-align: right;
+    padding: auto;
+    margin: 0;
+  }
+}

@@ -1,0 +1,212 @@
+$color-blue: #2676B2;
+$color-darkblue: #073453;
+$color-darkblueoverlay: rgba(7, 52, 83, 0.52);
+$color-white: white;
+$color-gray: #A3B3BF;
+
+* {
+  box-sizing: border-box;
+}
+
+header{
+    margin-bottom: 50px;
+  h1{
+    font-size: 70px;
+    padding-top: 2em;
+    color: $color-white;
+  }
+  h5{
+    padding-bottom: 9em;
+  }
+}
+
+.profile.image{
+  height: 8em;
+}
+
+
+.post-author {
+  color: $color-blue;
+  font-weight: bold;
+  margin-bottom: 40px;
+
+  img {
+    width: 20px;
+  }
+
+  span {
+    margin-left: 20px;
+  }
+}
+
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+    .navbar-nav>li>a {
+        color: black;
+    }
+  }
+
+.bg {
+  background-image: url(https://unsplash.it/300/134/?random);
+  box-shadow: inset 0 0 0 1000px rgba(53, 68, 198, 0.79);
+  height: 400px;
+}
+.post-links {
+  padding: 0;
+  list-style: none;
+
+  .post-link {
+    margin-right: 10px;
+    padding: 0;
+    display: inline-block;
+    background-color: $color-gray;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    width: 100%;
+    margin-bottom: 5px;
+
+    .glyphicon {
+      display: inline-block;
+      padding: 5px;
+      background-color: darken($color-gray, 20%);
+      vertical-align: bottom;
+    }
+
+    a {
+      color: $color-white;
+    }
+
+    &.post-link-blue {
+      background-color: $color-blue;
+
+      .glyphicon {
+        background-color: darken($color-blue, 20%);
+      }
+    }
+  }
+}
+
+.sidebar {
+  padding-top: 40px;
+
+  h4 {
+    color: $color-blue;
+  }
+
+  img {
+    max-width: 200px;
+  }
+}
+
+.profile-image {
+  width: 60px;
+}
+
+.social-links {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.ad {
+  margin-bottom: 30px;
+
+  figcaption {
+    font-size: 12px;
+  }
+}
+
+footer {
+  border-top: 1px solid lighten($color-gray, 20);
+  margin-top: 40px;
+  background-color: $color-darkblue;
+}
+
+.bg-white {
+  background-color: $color-white;
+  padding: 40px 0;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.footer-posts {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-darkblue;
+}
+
+.footer-post {
+  padding: 140px 30px 30px 30px;
+  color: $color-darkblue;
+  flex: 1;
+  height: 200px;
+  background-image: url(https://unsplash.it/200?random);
+  background-size: cover;
+  opacity: 0.5;
+  transition: all 1s ease;
+
+  h6 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    color: $color-white;
+    opacity: 1.0;
+  }
+}
+
+.footer-links {
+  color: $color-white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-left: -20px;
+  margin-top: 10px;
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+
+    a {
+      color: $color-white;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .post-links {
+    .post-link {
+      width: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  .footer-posts {
+    flex-direction: row;
+  }
+
+  .footer-links {
+    text-align: left;
+  }
+
+  .footer-nav {
+    text-align: right;
+    padding: auto;
+    margin: 0;
+  }
+}
